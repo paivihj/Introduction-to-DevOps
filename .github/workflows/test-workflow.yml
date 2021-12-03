@@ -1,0 +1,55 @@
+# This workflow tests that GitHub pages is correctly confugured and
+# checks that the deployed website matches the project requirements.
+# It runs automatically every time GitHub Pages are updated.
+#
+# DO NOT EDIT OR DELETE THIS FILE
+#
+# Use a separate workflow to deploy your website instead.
+
+name: Test GitHub pages and project requirements
+
+on:
+  page_build
+
+jobs:
+
+  test:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        shell: bash
+  
+    env:
+      PYTHON_VERSION: 3.9
+      REPOSITORY: ${{ github.repository }} 
+  
+    steps:
+
+      - name: Checkout code from master branch
+        uses: actions/checkout@v2
+        with:
+          #submodules: true
+          fetch-depth: 0
+
+      - name: Fetch submodule
+        run: |
+          git submodule set-url testproject https://github.com/cs-ej4104-fall-2021/test-project-test.git
+          git submodule update --remote
+
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .testproject/requirements.txt
+
+      - name: Check that GitHub pages are enabled
+        run: |
+          python .testproject/test_github_pages.py -r $REPOSITORY 
+
+      - name: Check project requirements against published pages
+        run: |
+          python .testproject/test_project_requirements.py -r $REPOSITORY 2>/dev/null

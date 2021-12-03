@@ -1,0 +1,25 @@
+# This workflow should build the website with Hugo and deploy it on
+# GitHub pages. Edit this file as you wish, otherwise just make sure 
+# that this folder contains a workflow exists that it is executed 
+# upon pushing the source to the default branch.
+
+name: Build and deploy GitHub pages with Hugo
+
+# The rest of the workflow is only provided as a minimal example that
+# does not produce any errors on GitHub. It should be modified to
+# fulfil the project requirements.
+
+# A workflow that only runs during leap years
+
+on:
+  schedule:
+    - cron: '59 11 29 2 *'
+
+# Sample job that does nothing
+
+jobs:
+  none:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Do nothing
+        run: ':'
