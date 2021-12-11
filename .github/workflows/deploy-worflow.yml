@@ -26,7 +26,9 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          external_repository: cs-ej4104-2021.github.io/paivihj-project/
+          external_repository: github.com/cs-ej4104-2021/paivihj-project
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          user_name: paivihj
+          user_email: paivi.julku@myy.haaga-helia.fi
           publish_dir: ./public
