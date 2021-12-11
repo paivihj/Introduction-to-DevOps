@@ -5,21 +5,28 @@
 
 name: Build and deploy GitHub pages with Hugo
 
-# The rest of the workflow is only provided as a minimal example that
-# does not produce any errors on GitHub. It should be modified to
-# fulfil the project requirements.
-
-# A workflow that only runs during leap years
-
-on:
-  schedule:
-    - cron: '59 11 29 2 *'
+on: push
 
 # Sample job that does nothing
 
 jobs:
-  none:
+  deploy:
     runs-on: ubuntu-20.04
     steps:
-      - name: Do nothing
-        run: ':'
+      - uses: actions/checkout@v2
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+            hugo-version: 'latest'
+        
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          external_repository: cs-ej4104-2021.github.io/paivihj-project/
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
