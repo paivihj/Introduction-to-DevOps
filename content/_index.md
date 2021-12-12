@@ -11,5 +11,5 @@ I am an ICT student at Haaga-Helia and work as a System Specialist in a company 
 ### Links:
  
  [Who]({{< ref "/who" >}} "Who")
- [Why DevOps]({{< ref "/blog" >}} "Blog")
+ [Why DevOps]({{< ref "/blog" >}} "Why DevOps")
  [MyCourses page](https://mycourses.aalto.fi/course/view.php?id=34305)

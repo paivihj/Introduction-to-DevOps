@@ -7,6 +7,7 @@ draft: false
 * I have learned quite a lot on this course, even though it is only 2 ECTS. Here a list of things I know (much) more about than before the course:
 	* Markdown syntax, I had not used Markdown before
 	* GitHub Pages, I had used GitHub, but not GitHub Pages
+	* More experience with git commands
 	* Hugo, had never even heard of Hugo before
 	* CAMS model, this was completely new thing to me as well
 	* Continuous delivery, some things were familiar already, but got deeper knowledge of this subject
