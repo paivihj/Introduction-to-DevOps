@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://cs-ej4104-2021.github.io/paivihj-project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog</title>
+      <title></title>
       <link>https://cs-ej4104-2021.github.io/paivihj-project/blog/</link>
-      <pubDate>Wed, 08 Dec 2021 17:20:49 +0200</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cs-ej4104-2021.github.io/paivihj-project/blog/</guid>
-      <description>Why I wanted to learn DevOps?  I had heard about DevOps in many different situations, but did not know exactly what it means. Introduction to DevOps course seemed like a good chance to learn the basics of DevOps and there was not similar course available in Haaga-Helia, where I study. I have learned quite a lot on this course, even though it is only 2 ECTS. Here a list of things I know (much) more about than before the course:  Markdown syntax, I had not used Markdown before GitHub Pages, I had used GitHub, but not GitHub Pages Hugo, had never even heard of Hugo before CAMS model, this was completely new thing to me as well Continuous delivery, some things were familiar already, but got deeper knowledge of this subject Setting up a webpage is actually quite easy, if it does not involve database or other interactive content!</description>
+      <description>Why I wanted to learn DevOps?  I had heard about DevOps in many different situations, but did not know exactly what it means. Introduction to DevOps course seemed like a good chance to learn the basics of DevOps and there was not similar course available in Haaga-Helia, where I study. I have learned quite a lot on this course, even though it is only 2 ECTS. Here a list of things I know (much) more about than before the course:  Markdown syntax, I had not used Markdown before GitHub Pages, I had used GitHub, but not GitHub Pages More experience with git commands Hugo, had never even heard of Hugo before CAMS model, this was completely new thing to me as well Continuous delivery, some things were familiar already, but got deeper knowledge of this subject Setting up a webpage is actually quite easy, if it does not involve database or other interactive content!</description>
     </item>
     
     <item>
