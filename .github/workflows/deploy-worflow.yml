@@ -7,8 +7,6 @@ name: Build and deploy GitHub pages with Hugo
 
 on: push
 
-# Sample job that does nothing
-
 jobs:
   deploy:
     runs-on: ubuntu-20.04
