@@ -1,10 +1,7 @@
 ---
-title: "Blog"
-date: 2021-12-08T17:20:49+02:00
 draft: false
 ---
 # Why I wanted to learn DevOps?
-
 * I had heard about DevOps in many different situations, but did not know exactly what it means.
 * Introduction to DevOps course seemed like a good chance to learn the basics of DevOps and there was not similar course available in Haaga-Helia, where I study.
 * I have learned quite a lot on this course, even though it is only 2 ECTS. Here a list of things I know (much) more about than before the course:
