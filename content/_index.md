@@ -1,7 +1,6 @@
 ---
 title: "DevOps"
-draft: true
-menu: "nav"
+draft: false
 ---
 
 # DevOps Project by Päivi

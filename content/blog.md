@@ -2,7 +2,6 @@
 title: "Blog"
 date: 2021-12-08T17:20:49+02:00
 draft: false
-menu: "nav"
 ---
 # Why I wanted to learn DevOps?
 
